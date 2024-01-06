@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChat.LoginActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="80sp"
+        android:src="@drawable/group"
+        app:tint="@color/purple_500" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20sp"
+        android:background="@drawable/et_background"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10sp"
+        android:background="@drawable/et_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Login"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="50sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Don't have an account!  "
+            android:textColor="@color/dark_gray"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Signup"
+            android:id="@+id/btn_createnew"
+            android:textColor="@color/dark_gray"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
